@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{% for i in exercise %}
+    <p><a href="{% url 'send_response' %}" >{{ i.title }} </a> : {{ i.defenition }} / {{ i.deadline }} </p>
+{% endfor %}
+
+
+<a href="{% url 'student' %}">Back to student panel</a>
+
+
+</body>
+</html>

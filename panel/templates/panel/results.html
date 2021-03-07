@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result Table</title>
+</head>
+<body>
+
+{% for i in exercise %}
+    <p><a href="{{ i.exercise.url }}" >{{ i.title }} </a> : {{ i.defenition }} / {{ i.deadline }} </p>
+{% endfor %}
+
+
+
+
+</body>
+</html>

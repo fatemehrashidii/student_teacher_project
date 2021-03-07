@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{% for i in response %}
+    <p><a href="{{ i.response.url }}" download="{{ i.title }}">{{ i.title }}</a></p>
+{% endfor %}
+
+
+
+
+
+<h2><a href="{% url 'send_response' %}">Upload Response</a></h2>
+
+</body>
+</html>

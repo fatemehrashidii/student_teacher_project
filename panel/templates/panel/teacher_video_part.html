@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{% for i in video %}
+    <h2><a href="{% url 'teacher_video_details' i.id %}">{{ i.title }}</a> : {{ i.defenition }} </h2>
+{% endfor %}
+
+<a href="{% url 'create_video' %}">Upload Video</a>
+
+
+
+</body>
+</html>

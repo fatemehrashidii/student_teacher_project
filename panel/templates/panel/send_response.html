@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form action="" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form }}
+    <a href="{% url 'responses' %}"><input type="submit" value="Submit"></a>
+
+</form>
+
+<a href="{% url 'student' %}">Back to student panel</a>
+
+</body>
+</html>
